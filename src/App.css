@@ -1,38 +1,286 @@
-.App {
+.app {
+  background-color: #effdff; /* Ajusta este color de fondo al que se muestra en la imagen */
+  height: 100vh; /* Utiliza el 100% de la altura de la pantalla */
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en una columna */
+  justify-content: space-around; /* Distribuye el espacio alrededor de los elementos */
+  align-items: center; /* Centra los elementos horizontalmente */
+  padding: 20px; 
+}
+
+.content {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content img {
+  max-width: 100%; /* Asegura que la imagen no sea más ancha que la pantalla */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin: 0 auto; /* Añade margen automático para centrar la imagen */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1 {
+  color: #1380c1; /* Este color es un ejemplo, elige el color exacto del título en la imagen */
+  margin-bottom: 16px;
+}
+
+p {
+  color: #1780c2; /* Este color es un ejemplo, elige el color exacto del subtítulo en la imagen */
+  margin-bottom: 32px;
+}
+
+.buttons {
+  /* Ajusta la disposición de los botones */
+}
+
+.btn-primary {
+  background-color: #56c1c7; /* Ajusta el color según sea necesario */
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+  padding: 15px 30px; /* Aumenta el padding para hacer el botón más grande */
+  font-size: 1.5em; /* Aumenta el tamaño de la fuente para agrandar el texto */
+  margin-right: 8px;
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre el botón */
+  /* Opcional: si necesitas un tamaño específico, puedes añadir width y height */
+  /* width: 200px; */
+  /* height: 60px; */
+  display: inline-block; /* Asegura que los márgenes y el padding funcionen como se espera */
+  text-align: center; /* Centra el texto dentro del botón */
+}
+@media only screen and (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Estilos para la pantalla de login */
+.login-screen {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px; /* Añade espacio en la parte superior */
+  height: 100vh;
+  background-color: #effdff; /* Ajusta este color de fondo al de la imagen */
+}
+
+.logo {
+  width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+  margin-bottom: 30px; /* Añade espacio debajo del logo */
+}
+/* Estilos para la pantalla de login */
+.login-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Esto distribuirá el espacio alrededor de los elementos internos */
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: #effdff; /* o el color de fondo que prefieras */
+}
+
+.header {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+}
+
+
+.login-logo {
+  max-width: 50px; /* o el tamaño que prefieras para el logo */
+  height: auto;
+  margin-right: 10px; /* Añade un margen para separar el logo del título */
+}
+
+.app-title {
+  font-size: 1.5rem; /* o el tamaño que prefieras para el título */
+  color: #214e34; /* o el color que prefieras para el título */
+  margin: 0;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 300px; /* Ajusta el ancho máximo según tu diseño */
+}
+
+.login-input {
+  color: #ffffff;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #279ad2;
+  border-radius: 20px;
+  background-color: #279ad2; /* Ajusta el color de fondo de los inputs */
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+.authentication-methods {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0;
+  margin-top: 15px; 
+}
+
+.fingerprint-icon,
+.face-icon {
+  width: 50px; /* Ajusta según el tamaño de tus íconos */
+  height: 50px; /* Ajusta según el tamaño de tus íconos */
+  background-color: #d9d9d9; /* Ajusta el color de fondo de los iconos */
+  /* Agrega aquí tus íconos */
+}
+
+.login-help {
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.login-link {
+  display: block;
+  color: #0000ff; /* Ajusta el color del enlace según sea necesario */
+  margin: 5px 0; /* Añade espacio entre los enlaces */
+  text-decoration: none; /* Opcional: elimina el subrayado del enlace */
+  font-size: 0.8em;
+}
+
+/* Agrega estilos responsivos si es necesario */
+@media (max-width: 600px) {
+  /* Ajusta los estilos para pantallas más pequeñas */
+}
+
+/* Estilos para el contenedor de los botones */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre los botones */
+  width: 100%; /* Asegúrate de que ocupa todo el ancho disponible */
+  padding: 10px 0; /* Añade un poco de espacio arriba y abajo */
+}
+
+/* Estilos para los botones individuales */
+.login-btn,
+.create-account-btn {
+  flex-basis: 48%; /* Cada botón ocupa aproximadamente la mitad del ancho */
+  padding: 15px;
+  margin: 0; /* Remueve el margen para alinearlos correctamente */
+  border: none;
+  border-radius: 5px;
   color: white;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fdbb21;
 }
 
-.App-link {
-  color: #61dafb;
+.create-account-btn {
+  background-color: #fdbb21; /* Color de fondo para el botón de crear cuenta */
+  color: white; /* Color del texto para el botón de crear cuenta */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Ajusta los estilos para los botones al pasar el mouse */
+.login-btn:hover,
+.create-account-btn:hover {
+  opacity: 0.9; /* Efecto sutil al pasar el mouse */
+}
+
+/* Estilos para los enlaces de ayuda */
+.login-link {
+  display: block;
+  color: #4CAF50; /* Ajusta el color de los enlaces */
+  margin: 5px 0;
+  text-decoration: none;
+  font-size: 0.9rem; /* Ajusta el tamaño del texto */
+}
+
+.login-link:hover {
+  text-decoration: underline; /* Añade un subrayado al pasar el mouse sobre el enlace */
+}
+
+/* main */
+/* Add these CSS styles to your stylesheet */
+
+.main-screen {
+  display: flex;
+  align-items: stretch; /* Stretch the children vertically */
+}
+
+.sidebar {
+  width: 250px; /* Set the width of the sidebar */
+  background-color: #f0f0f0; /* Set your desired background color */
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
+}
+
+/* Style the main content (adjust the width as needed) */
+/* .main-content {
+  flex: 1; 
+} */
+
+
+
+
+
+
+/* Sidebar.css */
+/* Sidebar.css */
+/* Update your CSS file */
+.container {
+  display: flex;
+  height: 100%;
+  overflow: hidden; /* Prevent content from overflowing */
+}
+.main-screen {
+  display: flex;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 35%; /* Adjust the width as needed (e.g., 25% for 1/4 of the screen) */
+  background-color: #279ad2; /* You can change the background color as needed */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+  position: fixed; /* Fixed position */
+  top: 0;
+  left: 0;
+  bottom: 0; /* Occupy the full height */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+
+.main-content {
+  flex-grow: 1;
+  margin-left: 25%; /* Adjust the margin to match the sidebar width */
+  background-color: #f0f0f0; /* Set the background color for the main content */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+/* CSS for logo and app name */
+.logo-name-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.sidebar hr {
+  border-color: #0da3c8; /* Horizontal line color */
+}
+
+.sidebar .menu-item {
+  padding: 12px;
+}
+
+.sidebar .submenu-label {
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.menu-item-custom {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #279ad2;
+  /* Add any other font-related styles here */
 }
