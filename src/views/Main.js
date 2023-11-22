@@ -3,6 +3,34 @@ import { useNavigate } from "react-router-dom";
 import { Sidebar, SubMenu, Menu, MenuItem } from "react-pro-sidebar";
 
 function Main() {
+  let navigate = useNavigate();
+  const switchToCuentasBancarias = () => {
+    navigate("/CuentasBancarias");
+  };
+
+  const switchToPagos = () => {
+    navigate("/Pagos");
+  };
+
+  const switchToControl = () => {
+    navigate("/Control");
+  };
+
+  const switchToPrestamos = () => {
+    navigate("/Prestamos");
+  };
+
+  const switchToCalendario = () => {
+    navigate("/Calendario");
+  };
+
+  const switchToConfiguracion = () => {
+    navigate("/Configuracion");
+  };
+  const switchToAyuda = () => {
+    navigate("/Ayuda");
+  };
+
   return (
     <div className="main-screen">
       <div className="sidebar">
@@ -15,17 +43,39 @@ function Main() {
             <hr />
 
             <Menu>
-              <MenuItem className="menu-item-custom">
+              <MenuItem
+                className="menu-item-custom"
+                onClick={switchToCuentasBancarias}
+              >
                 Cuentas Bancarias
               </MenuItem>
-              <MenuItem className="menu-item-custom">Pagos</MenuItem>
-              <MenuItem className="menu-item-custom">
+              <MenuItem className="menu-item-custom" onClick={switchToPagos}>
+                Pagos
+              </MenuItem>
+              <MenuItem className="menu-item-custom" onClick={switchToControl}>
                 Control de tarjetas
               </MenuItem>
-              <MenuItem className="menu-item-custom">Prestamos</MenuItem>
-              <MenuItem className="menu-item-custom">Calendario</MenuItem>
-              <MenuItem className="menu-item-custom">Configuracion</MenuItem>
-              <MenuItem className="menu-item-custom">Ayuda</MenuItem>
+              <MenuItem
+                className="menu-item-custom"
+                onClick={switchToPrestamos}
+              >
+                Prestamos
+              </MenuItem>
+              <MenuItem
+                className="menu-item-custom"
+                onClick={switchToCalendario}
+              >
+                Calendario
+              </MenuItem>
+              <MenuItem
+                className="menu-item-custom"
+                onClick={switchToConfiguracion}
+              >
+                Configuracion
+              </MenuItem>
+              <MenuItem className="menu-item-custom" onClick={switchToAyuda}>
+                Ayuda
+              </MenuItem>
               {/* <SubMenu label={"Professors"}>
                   <MenuItem>Active</MenuItem>
                   <MenuItem>Ex Professors</MenuItem>
