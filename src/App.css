@@ -5,7 +5,7 @@
   flex-direction: column; /* Organiza los elementos en una columna */
   justify-content: space-around; /* Distribuye el espacio alrededor de los elementos */
   align-items: center; /* Centra los elementos horizontalmente */
-  padding: 20px; 
+  padding: 20px;
 }
 
 .content {
@@ -85,7 +85,6 @@ p {
   width: 100%;
 }
 
-
 .login-logo {
   max-width: 50px; /* o el tamaño que prefieras para el logo */
   height: auto;
@@ -120,7 +119,7 @@ p {
   justify-content: space-evenly;
   align-items: center;
   margin: 20px 0;
-  margin-top: 15px; 
+  margin-top: 15px;
 }
 
 .fingerprint-icon,
@@ -186,7 +185,7 @@ p {
 /* Estilos para los enlaces de ayuda */
 .login-link {
   display: block;
-  color: #4CAF50; /* Ajusta el color de los enlaces */
+  color: #4caf50; /* Ajusta el color de los enlaces */
   margin: 5px 0;
   text-decoration: none;
   font-size: 0.9rem; /* Ajusta el tamaño del texto */
@@ -215,11 +214,6 @@ p {
   flex: 1; 
 } */
 
-
-
-
-
-
 /* Sidebar.css */
 /* Sidebar.css */
 /* Update your CSS file */
@@ -244,7 +238,6 @@ p {
   bottom: 0; /* Occupy the full height */
   overflow-x: hidden; /* Hide horizontal overflow */
 }
-
 
 .main-content {
   flex-grow: 1;
