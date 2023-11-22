@@ -1,0 +1,74 @@
+.headerall {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.return-button {
+  background-color: #56c1c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  margin-top: 10px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.header-logo {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.card-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-block {
+  background-color: #04498e;
+  color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px; /* Adjust the width according to your preference */
+  height: 50px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.card-block h1 {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.card-block h1 {
+  color: rgb(243, 242, 239); /* Color específico para el h1 dentro del bloque */
+}
+
+.card-block:hover {
+  background-color: #e0e0e0;
+}

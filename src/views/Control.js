@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Header.css";
+import "../styles/Control.css";
 import { useNavigate } from "react-router-dom";
 
 function Control() {
@@ -17,9 +18,22 @@ function Control() {
         />
         <h1 className="h1">Control de cuentas</h1>
       </div>
+
       <button className="return-button" onClick={switchToMain}>
         Regresar
       </button>
+
+      <div className="card-info">
+        <div className="card-block">
+          <h1>VISA - TARJETA DE CRÉDITO</h1>
+        </div>
+        <div className="card-block">
+          <h1>MASTERCARD - TARJETA DE CRÉDITO</h1>
+        </div>
+        <div className="card-block">
+          <h1>VISA - TARJETA DE DÉBITO</h1>
+        </div>
+      </div>
     </div>
   );
 }

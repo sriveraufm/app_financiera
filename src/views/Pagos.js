@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Header.css";
+import "../styles/Pagos.css";
 import { useNavigate } from "react-router-dom";
 
 function Pagos() {
@@ -20,6 +21,24 @@ function Pagos() {
       <button className="return-button" onClick={switchToMain}>
         Regresar
       </button>
+      <div className="account-info">
+        <div className="account-block">
+          <h1>Transferencias entre cuentas</h1>
+        </div>
+        {/* Puedes agregar más bloques de cuenta según sea necesario */}
+        <div className="account-block">
+          <h1>Transferencias a terceros</h1>
+        </div>
+        <div className="account-block">
+          <h1>Transferencias CHH</h1>
+        </div>
+        <div className="account-block">
+          <h1>Pagos a terceros</h1>
+        </div>
+        <div className="account-block">
+          <h1>Pagos a instituciones</h1>
+        </div>
+      </div>
     </div>
   );
 }

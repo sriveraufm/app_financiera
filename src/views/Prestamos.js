@@ -20,6 +20,17 @@ function Prestamos() {
       <button className="return-button" onClick={switchToMain}>
         Regresar
       </button>
+      <div className="card-info">
+        <div className="card-block">
+          <h1>Le debes a Carlos 100Q</h1>
+        </div>
+        <div className="card-block">
+          <h1>Le debes a Carla 50Q</h1>
+        </div>
+        <div className="card-block">
+          <h1>Se agrego un nuevo gasto a "CASA" 300Q</h1>
+        </div>
+      </div>
     </div>
   );
 }

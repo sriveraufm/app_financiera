@@ -1,0 +1,35 @@
+.account-info {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los bloques de cuenta se envuelvan si no caben en una línea */
+  justify-content: center;
+  margin-top: 20px; /* Ajusta según sea necesario para separar de los elementos anteriores */
+}
+
+.account-block {
+  background-color: #2586e7; /* Azul oscuro */
+  color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 300px; /* Ajusta según sea necesario */
+  text-align: left;
+  transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+}
+
+.account-block h1,
+.account-block p {
+  font-size: 0.9em; /* Tamaño de fuente más pequeño para los bloques */
+  margin: 5px 0; /* Ajuste del margen interior de los bloques */
+}
+.account-block h1 {
+  color: rgb(243, 242, 239); /* Color específico para el h1 dentro del bloque */
+}
+
+.account-block p {
+  color: rgb(243, 242, 239); /* Color específico para el h1 dentro del bloque */
+}
+
+.account-block:hover {
+  background-color: #003366; /* Cambia el color de fondo al pasar el mouse */
+}
