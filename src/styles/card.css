@@ -41,13 +41,13 @@
   margin: 0;
 }
 
-.card-info {
+.cards-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.card-block {
+.cards-block {
   background-color: #04498e;
   color: #000000;
   border: 1px solid #ccc;
@@ -55,24 +55,24 @@
   padding: 20px;
   margin: 10px;
   width: 300px; /* Adjust the width according to your preference */
-  height: 50px;
+  height: 400px;
   text-align: center;
   transition: background-color 0.3s ease;
 }
 
-.card-block h1 {
+.cards-block h1 {
   font-size: 1.2em;
   margin: 5px 0;
 }
 
-.card-block h1 {
+.cards-block h1 {
   color: rgb(243, 242, 239); /* Color específico para el h1 dentro del bloque */
 }
 
-.card-block p {
+.cards-block p {
   color: rgb(243, 242, 239); /* Color específico para el h1 dentro del bloque */
 }
 
-.card-block:hover {
+.cards-block:hover {
   background-color: #116d8c;
 }

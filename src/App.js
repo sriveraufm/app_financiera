@@ -10,6 +10,8 @@ import Prestamos from "./views/Prestamos";
 import Calendario from "./views/Calendario";
 import Configuracion from "./views/Configuracion";
 import Ayuda from "./views/Ayuda";
+import CalendarDays from "./views/CalendarDays";
+import Card from "./views/Card";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
             <Route path="/calendario" element={<Calendario />} />
             <Route path="/configuracion" element={<Configuracion />} />
             <Route path="/ayuda" element={<Ayuda />} />
+            <Route path="/day/:day" element={<CalendarDays />} />
+            <Route path="/card" element={<Card />} />
           </Routes>
         </Router>
       </div>

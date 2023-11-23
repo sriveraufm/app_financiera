@@ -1,0 +1,30 @@
+.calendario-container {
+  text-align: center;
+}
+
+.calendario-days {
+  display: grid;
+  grid-template-columns: repeat(
+    7,
+    1fr
+  ); /* 7 columns for each day of the week */
+  gap: 5px; /* Adjust as needed */
+  margin-top: 20px;
+}
+
+.calendario-day {
+  background-color: #04498e;
+  color: white;
+  border: 1px solid rgba(35, 42, 233, 0.314);
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.calendario-day:hover {
+  background-color: #4595e6; /* Add a subtle hover effect */
+}
+
+.h1 {
+  margin: 0;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Header.css";
+import "../styles/Configuracion.css";
 import { useNavigate } from "react-router-dom";
 
 function Configuracion() {
@@ -15,11 +16,21 @@ function Configuracion() {
           alt="Pagos y transferencias"
           className="header-logo"
         />
-        <h1 className="h1">Configuracion</h1>
+        <h1 className="h1">Configuración</h1>
       </div>
       <button className="return-button" onClick={switchToMain}>
         Regresar
       </button>
+      <div className="config-cards">
+        {/* Config Card 1 */}
+        <div className="config-card">
+          <h2>Notificaciones</h2>
+          <h2>Privacidad</h2>
+          <h2>Pérfil</h2>
+          <h2>Contraseñas</h2>
+          <h2>Control de actividades</h2>
+        </div>
+      </div>
     </div>
   );
 }

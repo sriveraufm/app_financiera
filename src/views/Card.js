@@ -1,16 +1,12 @@
 import React from "react";
 import "../styles/Header.css";
-import "../styles/Control.css";
+import "../styles/card.css";
 import { useNavigate } from "react-router-dom";
 
-function Control() {
+function Card() {
   let navigate = useNavigate();
   const switchToMain = () => {
     navigate("/Main");
-  };
-
-  const switchToCard = () => {
-    navigate("/Card");
   };
 
   return (
@@ -28,19 +24,21 @@ function Control() {
         Regresar
       </button>
 
-      <div className="card-info">
-        <div className="card-block" onClick={switchToCard}>
+      <div className="cards-info">
+        <div className="cards-block">
           <h1>VISA - TARJETA DE CRÉDITO</h1>
-        </div>
-        <div className="card-block">
-          <h1>MASTERCARD - TARJETA DE CRÉDITO</h1>
-        </div>
-        <div className="card-block">
-          <h1>VISA - TARJETA DE DÉBITO</h1>
+          <p>Dueño: Juan Pérez</p>
+          <p>Número de Tarjeta: **** **** **** 1234</p>
+          <p>Fecha de Vencimiento: 12/23</p>
+          <p>Fecha de Pago: 05/01/2023</p>
+          <p>Saldo Actual: $500.00</p>
+          <p>Mora: $20.00</p>
+          {/* Otros posibles campos */}
+          <p>Límite de Crédito: $1,000.00</p>
         </div>
       </div>
     </div>
   );
 }
 
-export default Control;
+export default Card;
